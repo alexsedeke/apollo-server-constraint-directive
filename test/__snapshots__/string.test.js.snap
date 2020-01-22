@@ -1157,7 +1157,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #passwordScore shoul
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "got 💩" at "input.title"; Expected type ConstraintString. Password for title is not strong enough undefined],
+    [GraphQLError: Variable "$input" got invalid value "got 💩" at "input.title"; Expected type ConstraintString. Password for title is not strong enough to reach a score of 3],
   ],
   "extensions": undefined,
   "http": Object {
