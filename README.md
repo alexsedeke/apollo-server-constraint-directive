@@ -3,7 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/alexanderVu/apollo-server-constraint-directive/badge.svg?branch=master)](https://coveralls.io/github/alexanderVu/apollo-server-constraint-directive?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/alexanderVu/apollo-server-constraint-directive/badge.svg?targetFile=package.json)](https://snyk.io/test/github/alexanderVu/apollo-server-constraint-directive?targetFile=package.json)
 
-Allows using @constraint as a directive to validate input and output data. This module is for [*Apollo Graphql Koa middleware*](https://www.apollographql.com/docs/apollo-server/integrations/middleware/#gatsby-focus-wrapper), and support the latest [Apollo GraphQL](https://www.apollographql.com/) version 2.
+Allows using @constraint as a directive to validate input and output data. This module is for [*Apollo Server*](https://www.apollographql.com/docs/apollo-server/getting-started/), and support the latest [Apollo Server](https://www.apollographql.com/) version 2.
 
 It is mainly based on the module from [graphql-constraint-directive](https://github.com/confuser/graphql-constraint-directive), which is for Apollo version 1 only.
 This module is an Inspired by [Constraints Directives RFC](https://github.com/APIs-guru/graphql-constraints-spec) and OpenAPI
