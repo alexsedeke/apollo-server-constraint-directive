@@ -127,7 +127,7 @@ Supported formats:
 
 #### password strength
 
-```@constraint(password: 3)```
+```@constraint(passwordScore: 3)```
 Ensure password value has estimated strength. [zxcvbn](https://github.com/dropbox/zxcvbn) is used under the hood. Possible strength values are between 1 and 5. Heigher is better
 
 ### Int/Float
