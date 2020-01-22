@@ -1157,7 +1157,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #passwordScore shoul
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "got 💩" at "input.title"; Expected type ConstraintString. Password is not strong enough!],
+    [GraphQLError: Variable "$input" got invalid value "got 💩" at "input.title"; Expected type ConstraintString. Password for title is not strong enough undefined],
   ],
   "extensions": undefined,
   "http": Object {
@@ -1170,10 +1170,10 @@ Object {
 
 exports[`INPUT_FIELD_DEFINITION String validate @constraint #passwordScore should pass equal 1`] = `
 Object {
-  "data": undefined,
-  "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "Tr0ub4dour&3|!" at "input.title"; Expected type ConstraintString. Password is not strong enough undefined],
-  ],
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
   "extensions": undefined,
   "http": Object {
     "headers": Headers {
@@ -1185,10 +1185,10 @@ Object {
 
 exports[`INPUT_FIELD_DEFINITION String validate @constraint #passwordScore should pass higher 1`] = `
 Object {
-  "data": undefined,
-  "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "Tr0ub4dour&3|!dseě" at "input.title"; Expected type ConstraintString. Password is not strong enough undefined],
-  ],
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
   "extensions": undefined,
   "http": Object {
     "headers": Headers {

@@ -87,9 +87,9 @@ function validate (fieldName, args, value) {
     }
   }
 
-  if (args.passwordScore && password(value, args.passwordScore)) {
+  if (args.passwordScore && !password(value, args.passwordScore)) {
     throw new ValidationError(fieldName,
-      `Password is not strong enough ${args.password}`,
+      `Password for ${fieldName} is not strong enough ${args.password}`,
       [{ arg: 'password', value: args.password }])
   }
 }
