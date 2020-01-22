@@ -1,0 +1,575 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FIELD_DEFINITION Int validate @constraint #exclusiveMax should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": 1,
+      },
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be less than 2],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #exclusiveMax should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": 0,
+      },
+      Object {
+        "title": 1,
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #exclusiveMax0 should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": -2,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be less than 0],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #exclusiveMax0 should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": -1,
+      },
+      Object {
+        "title": -2,
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #exclusiveMin should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": 3,
+      },
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be greater than 2],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #exclusiveMin should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": 3,
+      },
+      Object {
+        "title": 4,
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #exclusiveMin0 should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": 2,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be greater than 0],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #exclusiveMin0 should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": 1,
+      },
+      Object {
+        "title": 3,
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #max should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": 2,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be no greater than 2],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #max should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": 1,
+      },
+      Object {
+        "title": 2,
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #max0 should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": -2,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be no greater than 0],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #max0 should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": 0,
+      },
+      Object {
+        "title": -1,
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #min should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be at least 3],
+    [GraphQLError: Must be at least 3],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #min should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": 3,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be at least 3],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #min0 should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": 2,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be at least 0],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #min0 should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": 1,
+      },
+      Object {
+        "title": 2,
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #multipleOf should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": 2,
+      },
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be a multiple of 2],
+    [GraphQLError: Must be a multiple of 2],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION Int validate @constraint #multipleOf should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": 2,
+      },
+      Object {
+        "title": 4,
+      },
+      Object {
+        "title": 6,
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION Int validate @constraint #exclusiveMax should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value 3 at "input.title"; Expected type ConstraintNumber. Must be less than 3],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION Int validate @constraint #exclusiveMax should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION Int validate @constraint #exclusiveMin should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value 3 at "input.title"; Expected type ConstraintNumber. Must be greater than 3],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION Int validate @constraint #exclusiveMin should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION Int validate @constraint #max should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value 5 at "input.title"; Expected type ConstraintNumber. Must be no greater than 3],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION Int validate @constraint #max should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION Int validate @constraint #min should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value 2 at "input.title"; Expected type ConstraintNumber. Must be at least 3],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION Int validate @constraint #min should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION Int validate @constraint #multipleOf should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value 7 at "input.title"; Expected type ConstraintNumber. Must be a multiple of 2],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION Int validate @constraint #multipleOf should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

@@ -1,0 +1,1259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FIELD_DEFINITION String validate @constraint #contains should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "foo💩",
+      },
+      Object {
+        "title": "bar💩",
+      },
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must contain 💩],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #contains should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "foo💩",
+      },
+      Object {
+        "title": "bar💩",
+      },
+      Object {
+        "title": "baz💩",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #endsWith should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "foo💩",
+      },
+      Object {
+        "title": "bar💩",
+      },
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must end with 💩],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #endsWith should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "foo💩",
+      },
+      Object {
+        "title": "bar💩",
+      },
+      Object {
+        "title": "baz💩",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #byte should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be in byte format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #byte should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "afoo",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #date should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be a date in ISO 8601 format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #date should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "2018-05-16",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #date-time should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be a date-time in RFC 3339 format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #date-time should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "2018-05-16T12:57:00Z",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #email should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be in email format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #email should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "test@test.com",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #ipv4 should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be in IP v4 format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #ipv4 should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "127.0.0.1",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #ipv6 should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be in IP v6 format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #ipv6 should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "2001:db8:0000:1:1:1:1:1",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #unknown should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Invalid format type unknown],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #uri should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be in URI format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #uri should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "foobar.com",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #uuid should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be in UUID format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #format #uuid should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "A987FBC9-4BED-3078-CF07-9141BA07C9F3",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #maxLength should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "foo",
+      },
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be no more than 3 characters in length],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #maxLength should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "fo",
+      },
+      Object {
+        "title": "foo",
+      },
+      Object {
+        "title": "bar",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #minLength should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": "foo",
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must be at least 3 characters in length],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #minLength should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "foo",
+      },
+      Object {
+        "title": "foobar",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #notContains should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": "baz",
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must not contain 💩],
+    [GraphQLError: Must not contain 💩],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #notContains should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "foo",
+      },
+      Object {
+        "title": "bar",
+      },
+      Object {
+        "title": "baz",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #pattern should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": null,
+      },
+      Object {
+        "title": "baz",
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must match ^[0-9a-zA-Z]*$],
+    [GraphQLError: Must match ^[0-9a-zA-Z]*$],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #pattern should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "foo",
+      },
+      Object {
+        "title": "bar",
+      },
+      Object {
+        "title": "baz",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #startsWith should fail 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "💩foo",
+      },
+      Object {
+        "title": "💩bar",
+      },
+      Object {
+        "title": null,
+      },
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Must start with 💩],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`FIELD_DEFINITION String validate @constraint #startsWith should pass 1`] = `
+Object {
+  "data": Object {
+    "books": Array [
+      Object {
+        "title": "💩foo",
+      },
+      Object {
+        "title": "💩bar",
+      },
+      Object {
+        "title": "💩baz",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #contains should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "Oh no" at "input.title"; Expected type ConstraintString. Must contain 💩],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #contains should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #endsWith should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "💩 no" at "input.title"; Expected type ConstraintString. Must end with 💩],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #endsWith should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #byte should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "£££" at "input.title"; Expected type ConstraintString. Must be in byte format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #byte should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #date should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "too late" at "input.title"; Expected type ConstraintString. Must be a date in ISO 8601 format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #date should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #date-time should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "no time" at "input.title"; Expected type ConstraintString. Must be a date-time in RFC 3339 format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #date-time should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #email should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ConstraintString. Must be in email format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #email should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #ipv4 should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ConstraintString. Must be in IP v4 format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #ipv4 should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #ipv6 should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ConstraintString. Must be in IP v6 format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #ipv6 should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #unknowm should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "a" at "input.title"; Expected type ConstraintString. Invalid format type unknowm],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #uri should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ConstraintString. Must be in URI format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #uri should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #uuid should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ConstraintString. Must be in UUID format],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #uuid should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #maxLength should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "fail💩" at "input.title"; Expected type ConstraintString. Must be no more than 3 characters in length],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #maxLength should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #maxLength should throw custom error 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    Object {
+      "code": "ERR_GRAPHQL_CONSTRAINT_VALIDATION",
+      "context": Array [
+        Object {
+          "arg": "maxLength",
+          "value": 3,
+        },
+      ],
+      "fieldName": "title",
+      "message": "Must be no more than 3 characters in length",
+    },
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #minLength should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "a💩" at "input.title"; Expected type ConstraintString. Must be at least 3 characters in length],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #minLength should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #minLength should throw custom error 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    Object {
+      "code": "ERR_GRAPHQL_CONSTRAINT_VALIDATION",
+      "context": Array [
+        Object {
+          "arg": "minLength",
+          "value": 3,
+        },
+      ],
+      "fieldName": "title",
+      "message": "Must be at least 3 characters in length",
+    },
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #notContains should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "It contains 💩 the sign" at "input.title"; Expected type ConstraintString. Must not contain 💩],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #notContains should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #passwordScore should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "got 💩" at "input.title"; Expected type ConstraintString. Password is not strong enough!],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #passwordScore should pass equal 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "Tr0ub4dour&3|!" at "input.title"; Expected type ConstraintString. Password is not strong enough undefined],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #passwordScore should pass higher 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "Tr0ub4dour&3|!dseě" at "input.title"; Expected type ConstraintString. Password is not strong enough undefined],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #pattern should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "£££" at "input.title"; Expected type ConstraintString. Must match ^[0-9a-zA-Z]*$],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #pattern should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #startsWith should fail 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [GraphQLError: Variable "$input" got invalid value "no 💩" at "input.title"; Expected type ConstraintString. Must start with 💩],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`INPUT_FIELD_DEFINITION String validate @constraint #startsWith should pass 1`] = `
+Object {
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

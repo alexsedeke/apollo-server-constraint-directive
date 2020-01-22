@@ -1,0 +1,48 @@
+{
+  "name": "apollo-server-constraint-directive",
+  "version": "1.1.1",
+  "description": "Check the GraphQL input fields with directives",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "test:unit": "jest"
+  },
+  "author": "Alexander Vu <alexander.vu.tuyet@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alexanderVu/apollo-server-constraint-directive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexanderVu/apollo-server-constraint-directive/issues"
+  },
+  "keywords": [
+    "graphql",
+    "apollo",
+    "apollo-server",
+    "validate",
+    "validation",
+    "validator",
+    "directive",
+    "constraint"
+  ],
+  "devDependencies": {
+    "apollo-server-testing": "^2.9.16",
+    "coveralls": "^3.0.9",
+    "graphql": "^14.5.8",
+    "jest": "^25.1.0",
+    "standard": "^14.3.1"
+  },
+  "dependencies": {
+    "apollo-server": "^2.9.16",
+    "validator": "^12.1.0",
+    "zxcvbn": "^4.4.2"
+  },
+  "peerDependencies": {
+    "graphql": "^14.5.8"
+  }
+}
