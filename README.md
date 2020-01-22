@@ -8,6 +8,8 @@ Allows using @constraint as a directive to validate input and output data. This 
 It is mainly based on the module from [graphql-constraint-directive](https://github.com/confuser/graphql-constraint-directive), which is for Apollo version 1 only.
 This module is an Inspired by [Constraints Directives RFC](https://github.com/APIs-guru/graphql-constraints-spec) and OpenAPI
 
+If you are looking for a playground checkout this project [apollo-server-playground](https://github.com/alexanderVu/apollo-server-playground).
+
 ## Install
 
 ```bash
