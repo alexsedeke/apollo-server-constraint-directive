@@ -1,6 +1,6 @@
 {
   "name": "apollo-server-constraint-directive",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "Check the GraphQL input fields with directives",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "author": "Alexander Vu <alexander.vu.tuyet@gmail.com>",
   "license": "ISC",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=10"
   },
   "repository": {
     "type": "git",

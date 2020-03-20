@@ -1,8 +1,8 @@
-const { GraphQLError } = require('graphql/error')
-const { isUUID } = require('validator')
+const { GraphQLError } = require('graphql/error');
+const { isUUID } = require('validator');
 
 module.exports = (value) => {
-  if (isUUID(value)) return true
+  if (isUUID(value)) return true;
 
-  throw new GraphQLError('Must be in UUID format')
-}
+  throw new GraphQLError('Must be in UUID format');
+};

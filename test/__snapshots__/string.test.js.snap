@@ -702,7 +702,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #contains should fai
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "Oh no" at "input.title"; Expected type ConstraintString. Must contain 💩],
+    [GraphQLError: Variable "$input" got invalid value "Oh no" at "input.title"; Expected type ValidateString. Must contain 💩],
   ],
   "extensions": undefined,
   "http": Object {
@@ -732,7 +732,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #endsWith should fai
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "💩 no" at "input.title"; Expected type ConstraintString. Must end with 💩],
+    [GraphQLError: Variable "$input" got invalid value "💩 no" at "input.title"; Expected type ValidateString. Must end with 💩],
   ],
   "extensions": undefined,
   "http": Object {
@@ -762,7 +762,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #byte should
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "£££" at "input.title"; Expected type ConstraintString. Must be in byte format],
+    [GraphQLError: Variable "$input" got invalid value "£££" at "input.title"; Expected type ValidateString. Must be in byte format],
   ],
   "extensions": undefined,
   "http": Object {
@@ -792,7 +792,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #date should
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "too late" at "input.title"; Expected type ConstraintString. Must be a date in ISO 8601 format],
+    [GraphQLError: Variable "$input" got invalid value "too late" at "input.title"; Expected type ValidateString. Must be a date in ISO 8601 format],
   ],
   "extensions": undefined,
   "http": Object {
@@ -822,7 +822,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #date-time s
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "no time" at "input.title"; Expected type ConstraintString. Must be a date-time in RFC 3339 format],
+    [GraphQLError: Variable "$input" got invalid value "no time" at "input.title"; Expected type ValidateString. Must be a date-time in RFC 3339 format],
   ],
   "extensions": undefined,
   "http": Object {
@@ -852,7 +852,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #email shoul
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ConstraintString. Must be in email format],
+    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ValidateString. Must be in email format],
   ],
   "extensions": undefined,
   "http": Object {
@@ -882,7 +882,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #ipv4 should
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ConstraintString. Must be in IP v4 format],
+    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ValidateString. Must be in IP v4 format],
   ],
   "extensions": undefined,
   "http": Object {
@@ -912,7 +912,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #ipv6 should
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ConstraintString. Must be in IP v6 format],
+    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ValidateString. Must be in IP v6 format],
   ],
   "extensions": undefined,
   "http": Object {
@@ -942,7 +942,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #unknowm sho
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "a" at "input.title"; Expected type ConstraintString. Invalid format type unknowm],
+    [GraphQLError: Variable "$input" got invalid value "a" at "input.title"; Expected type ValidateString. Invalid format type unknowm],
   ],
   "extensions": undefined,
   "http": Object {
@@ -957,7 +957,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #uri should 
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ConstraintString. Must be in URI format],
+    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ValidateString. Must be in URI format],
   ],
   "extensions": undefined,
   "http": Object {
@@ -987,7 +987,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #format #uuid should
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ConstraintString. Must be in UUID format],
+    [GraphQLError: Variable "$input" got invalid value "null" at "input.title"; Expected type ValidateString. Must be in UUID format],
   ],
   "extensions": undefined,
   "http": Object {
@@ -1017,7 +1017,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #maxLength should fa
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "fail💩" at "input.title"; Expected type ConstraintString. Must be no more than 3 characters in length],
+    [GraphQLError: Variable "$input" got invalid value "fail💩" at "input.title"; Expected type ValidateString. Must be no more than 3 characters in length],
   ],
   "extensions": undefined,
   "http": Object {
@@ -1048,7 +1048,7 @@ Object {
   "data": undefined,
   "errors": Array [
     Object {
-      "code": "ERR_GRAPHQL_CONSTRAINT_VALIDATION",
+      "code": "BAD_USER_INPUT",
       "context": Array [
         Object {
           "arg": "maxLength",
@@ -1072,7 +1072,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #minLength should fa
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "a💩" at "input.title"; Expected type ConstraintString. Must be at least 3 characters in length],
+    [GraphQLError: Variable "$input" got invalid value "a💩" at "input.title"; Expected type ValidateString. Must be at least 3 characters in length],
   ],
   "extensions": undefined,
   "http": Object {
@@ -1103,7 +1103,7 @@ Object {
   "data": undefined,
   "errors": Array [
     Object {
-      "code": "ERR_GRAPHQL_CONSTRAINT_VALIDATION",
+      "code": "BAD_USER_INPUT",
       "context": Array [
         Object {
           "arg": "minLength",
@@ -1127,7 +1127,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #notContains should 
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "It contains 💩 the sign" at "input.title"; Expected type ConstraintString. Must not contain 💩],
+    [GraphQLError: Variable "$input" got invalid value "It contains 💩 the sign" at "input.title"; Expected type ValidateString. Must not contain 💩],
   ],
   "extensions": undefined,
   "http": Object {
@@ -1155,10 +1155,10 @@ Object {
 
 exports[`INPUT_FIELD_DEFINITION String validate @constraint #passwordScore should fail 1`] = `
 Object {
-  "data": undefined,
-  "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "got 💩" at "input.title"; Expected type ConstraintString. Password for title is not strong enough to reach a score of 3],
-  ],
+  "data": Object {
+    "createBook": null,
+  },
+  "errors": undefined,
   "extensions": undefined,
   "http": Object {
     "headers": Headers {
@@ -1202,7 +1202,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #pattern should fail
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "£££" at "input.title"; Expected type ConstraintString. Must match ^[0-9a-zA-Z]*$],
+    [GraphQLError: Variable "$input" got invalid value "£££" at "input.title"; Expected type ValidateString. Must match ^[0-9a-zA-Z]*$],
   ],
   "extensions": undefined,
   "http": Object {
@@ -1232,7 +1232,7 @@ exports[`INPUT_FIELD_DEFINITION String validate @constraint #startsWith should f
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value "no 💩" at "input.title"; Expected type ConstraintString. Must start with 💩],
+    [GraphQLError: Variable "$input" got invalid value "no 💩" at "input.title"; Expected type ValidateString. Must start with 💩],
   ],
   "extensions": undefined,
   "http": Object {

@@ -4,7 +4,9 @@ const ConstraintDirective = require('../')
 const constructTestServer = ({ typeDefs, resolvers, formatError }) => {
   const schema = makeExecutableSchema({
     typeDefs,
-    schemaDirectives: { constraint: ConstraintDirective },
+    schemaDirectives: { 
+      constraint: ConstraintDirective
+    },
     resolvers
   });
 

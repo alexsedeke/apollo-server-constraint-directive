@@ -6,12 +6,12 @@ const formats = [
   'ipv4',
   'ipv6',
   'uri',
-  'uuid'
-]
-const fns = {}
+  'uuid',
+];
+const fns = {};
 
-formats.forEach(function (format) {
-  fns[format] = require('./' + format)
-})
+formats.forEach((format) => {
+  fns[format] = require(`./${format}`); // eslint-disable-line
+});
 
-module.exports = fns
+module.exports = fns;
