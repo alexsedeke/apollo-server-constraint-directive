@@ -45,12 +45,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release for Apollo v.2.
 
-## [0.0.0] - 2020-00-00
-
-### Added
-
-### Changed
-
-### Removed
-
-### Fixed

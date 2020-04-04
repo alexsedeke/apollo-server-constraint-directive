@@ -33,8 +33,8 @@
   "devDependencies": {
     "apollo-server-testing": "^2.11.0",
     "coveralls": "^3.0.11",
-    "graphql": "^14.6.0",
-    "jest": "^25.1.0",
+    "graphql": "^15.0.0",
+    "jest": "^25.2.7",
     "standard": "^14.3.3"
   },
   "dependencies": {
@@ -43,6 +43,6 @@
     "zxcvbn": "^4.4.2"
   },
   "peerDependencies": {
-    "graphql": "^14.6.0"
+    "graphql": "^15.0.0"
   }
 }
