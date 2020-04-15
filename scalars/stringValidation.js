@@ -6,42 +6,42 @@ const ValidationError = require('./validationError');
 function validate(fieldName, args, value) {
   if (args.minLength && !isLength(value, { min: args.minLength })) {
     throw new ValidationError(fieldName,
-      `Must be at least ${args.minLength} characters in length`,
+      `${fieldName} must be at least ${args.minLength} characters in length`,
       [{ arg: 'minLength', value: args.minLength }]);
   }
   if (args.maxLength && !isLength(value, { max: args.maxLength })) {
     throw new ValidationError(fieldName,
-      `Must be no more than ${args.maxLength} characters in length`,
+      `${fieldName} must be no more than ${args.maxLength} characters in length`,
       [{ arg: 'maxLength', value: args.maxLength }]);
   }
 
   if (args.startsWith && !value.startsWith(args.startsWith)) {
     throw new ValidationError(fieldName,
-      `Must start with ${args.startsWith}`,
+      `${fieldName} must start with ${args.startsWith}`,
       [{ arg: 'startsWith', value: args.startsWith }]);
   }
 
   if (args.endsWith && !value.endsWith(args.endsWith)) {
     throw new ValidationError(fieldName,
-      `Must end with ${args.endsWith}`,
+      `${fieldName} must end with ${args.endsWith}`,
       [{ arg: 'endsWith', value: args.endsWith }]);
   }
 
   if (args.contains && !contains(value, args.contains)) {
     throw new ValidationError(fieldName,
-      `Must contain ${args.contains}`,
+      `${fieldName} must contain ${args.contains}`,
       [{ arg: 'contains', value: args.contains }]);
   }
 
   if (args.notContains && contains(value, args.notContains)) {
     throw new ValidationError(fieldName,
-      `Must not contain ${args.notContains}`,
+      `${fieldName} must not contain ${args.notContains}`,
       [{ arg: 'notContains', value: args.notContains }]);
   }
 
   if (args.pattern && !new RegExp(args.pattern).test(value)) {
     throw new ValidationError(fieldName,
-      `Must match ${args.pattern}`,
+      `${fieldName} must match ${args.pattern}`,
       [{ arg: 'pattern', value: args.pattern }]);
   }
 
@@ -50,7 +50,7 @@ function validate(fieldName, args, value) {
 
     if (!formatter) {
       throw new ValidationError(fieldName,
-        `Invalid format type ${args.format}`,
+        `${fieldName} has invalid format type ${args.format}`,
         [{ arg: 'format', value: args.format }]);
     }
 
