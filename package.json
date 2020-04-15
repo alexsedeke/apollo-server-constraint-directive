@@ -31,14 +31,14 @@
     "constraint"
   ],
   "devDependencies": {
-    "apollo-server-testing": "^2.11.0",
+    "apollo-server-testing": "^2.12.0",
     "coveralls": "^3.0.11",
     "graphql": "^15.0.0",
-    "jest": "^25.2.7",
+    "jest": "^25.3.0",
     "standard": "^14.3.3"
   },
   "dependencies": {
-    "apollo-server": "^2.11.0",
+    "apollo-server": "^2.12.0",
     "validator": "^13.0.0",
     "zxcvbn": "^4.4.2"
   },
