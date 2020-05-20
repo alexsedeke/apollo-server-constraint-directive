@@ -1,6 +1,6 @@
 on: ["push", "pull_request"]
 
-name: Test Coveralls
+name: Test Coverage
 
 jobs:
 
@@ -16,12 +16,14 @@ jobs:
       with:
         node-version: 12
 
-    - name: npm install, make test-coverage
+    - name: npm install, test coverage
       run: |
         npm ci
-        npm run test:coverage
-
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
+        npm run test
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.CODECOV_TOKEN }}
+        flags: unittests
+        name: apollo-server-directives
+        fail_ci_if_error: true
