@@ -1,6 +1,6 @@
 # apollo-server-constraint-directive
 
-![githubActions](https://github.com/alexanderVu/apollo-server-constraint-directive/workflows/ci/badge.svg)
+![GitHub actions test coverage](https://github.com/alexanderVu/apollo-server-constraint-directive/workflows/Test%20Coverage/badge.svg)
 [![codecov](https://codecov.io/gh/alexanderVu/apollo-server-constraint-directive/branch/master/graph/badge.svg)](https://codecov.io/gh/alexanderVu/apollo-server-constraint-directive)
 [![Known Vulnerabilities](https://snyk.io/test/github/alexanderVu/apollo-server-constraint-directive/badge.svg?targetFile=package.json)](https://snyk.io/test/github/alexanderVu/apollo-server-constraint-directive?targetFile=package.json)
 
