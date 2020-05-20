@@ -6,7 +6,6 @@
   "scripts": {
     "lint": "standard",
     "test": "npm run test:unit",
-    "test:coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:unit": "jest"
   },
   "author": "Alexander Vu <alexander.vu.tuyet@gmail.com>",
