@@ -1,6 +1,7 @@
 # apollo-server-constraint-directive
-[![Build Status](https://travis-ci.org/alexanderVu/apollo-server-constraint-directive.svg?branch=master)](https://travis-ci.org/alexanderVu/apollo-server-constraint-directive)
-[![Coverage Status](https://coveralls.io/repos/github/alexanderVu/apollo-server-constraint-directive/badge.svg?branch=master)](https://coveralls.io/github/alexanderVu/apollo-server-constraint-directive?branch=master)
+
+![githubActions](https://github.com/alexanderVu/apollo-server-constraint-directive/workflows/ci/badge.svg)
+[![codecov](https://codecov.io/gh/alexanderVu/apollo-server-constraint-directive/branch/master/graph/badge.svg)](https://codecov.io/gh/alexanderVu/apollo-server-constraint-directive)
 [![Known Vulnerabilities](https://snyk.io/test/github/alexanderVu/apollo-server-constraint-directive/badge.svg?targetFile=package.json)](https://snyk.io/test/github/alexanderVu/apollo-server-constraint-directive?targetFile=package.json)
 
 Allows using @constraint as a directive to validate input and output data. This module is for [*Apollo Server*](https://www.apollographql.com/docs/apollo-server/getting-started/), and support the latest [Apollo Server](https://www.apollographql.com/) version 2.
