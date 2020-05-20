@@ -428,7 +428,7 @@ exports[`INPUT_FIELD_DEFINITION Int validate @constraint #exclusiveMax should fa
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value 3 at "input.title"; Expected type ValidateNumber. title must be less than 3],
+    [GraphQLError: Variable "$input" got invalid value 3 at "input.title"; Expected type "ValidateNumber". title must be less than 3],
   ],
   "extensions": undefined,
   "http": Object {
@@ -458,7 +458,7 @@ exports[`INPUT_FIELD_DEFINITION Int validate @constraint #exclusiveMin should fa
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value 3 at "input.title"; Expected type ValidateNumber. title must be greater than 3],
+    [GraphQLError: Variable "$input" got invalid value 3 at "input.title"; Expected type "ValidateNumber". title must be greater than 3],
   ],
   "extensions": undefined,
   "http": Object {
@@ -488,7 +488,7 @@ exports[`INPUT_FIELD_DEFINITION Int validate @constraint #max should fail 1`] = 
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value 5 at "input.title"; Expected type ValidateNumber. title must be no greater than 3],
+    [GraphQLError: Variable "$input" got invalid value 5 at "input.title"; Expected type "ValidateNumber". title must be no greater than 3],
   ],
   "extensions": undefined,
   "http": Object {
@@ -518,7 +518,7 @@ exports[`INPUT_FIELD_DEFINITION Int validate @constraint #min should fail 1`] = 
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value 2 at "input.title"; Expected type ValidateNumber. title must be at least 3],
+    [GraphQLError: Variable "$input" got invalid value 2 at "input.title"; Expected type "ValidateNumber". title must be at least 3],
   ],
   "extensions": undefined,
   "http": Object {
@@ -548,7 +548,7 @@ exports[`INPUT_FIELD_DEFINITION Int validate @constraint #multipleOf should fail
 Object {
   "data": undefined,
   "errors": Array [
-    [GraphQLError: Variable "$input" got invalid value 7 at "input.title"; Expected type ValidateNumber. title must be a multiple of 2],
+    [GraphQLError: Variable "$input" got invalid value 7 at "input.title"; Expected type "ValidateNumber". title must be a multiple of 2],
   ],
   "extensions": undefined,
   "http": Object {
