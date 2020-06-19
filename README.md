@@ -28,6 +28,9 @@ const schemaDirectives = {
 };
 
 const typeDefs = gql`
+  scalar ValidateString
+  scalar ValidateNumber
+
   directive @constraint(
     # String constraints
     minLength: Int
