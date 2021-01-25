@@ -42,6 +42,6 @@
     "zxcvbn": "^4.4.2"
   },
   "peerDependencies": {
-    "graphql": "^15.4.0"
+    "graphql": "^14.7.0"
   }
 }
