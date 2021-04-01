@@ -1,6 +1,6 @@
 {
   "name": "apollo-server-constraint-directive",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Check the GraphQL input fields with directives",
   "main": "index.js",
   "scripts": {
@@ -31,13 +31,13 @@
     "constraint"
   ],
   "devDependencies": {
-    "apollo-server-testing": "^2.21.0",
+    "apollo-server-testing": "^2.22.2",
     "graphql": "^14.7.0",
     "jest": "^26.6.3",
     "standard": "^16.0.3"
   },
   "dependencies": {
-    "apollo-server": "^2.21.0",
+    "apollo-server": "^2.22.2",
     "validator": "^13.5.2",
     "zxcvbn": "^4.4.2"
   },
